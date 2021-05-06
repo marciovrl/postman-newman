@@ -1,15 +1,17 @@
 # Postman with Newman
 
 ## About
-This project is to demonstrate a simple example of using the Postman with Newman. 
+This project is to demonstrate a simple example of using the Postman with Newman. Tests are performed in [JsonPlaceholder](https://jsonplaceholder.typicode.com/) is a fake online REST API for testing and prototyping.
 
 * [About](#About)
 * [Preconditions](#Preconditions)
 * [Local environment](#Local-environment)
     * [Configuration](#Configuration)
     * [Getting started](#Getting-started)
-    * [Install dependencies](#Install-dependencies)
     * [Commands for running the tests](#Commands-for-running-the-tests)
+* [Using docker](#Using-docker-environment)
+    * [Configuration docker](#Configuration-docker)
+    * [Commands for running the tests on docker](#Commands-for-running-the-tests-on-docker)
 * [Links](#Links)
 
 ## Preconditions
@@ -35,6 +37,17 @@ This project is to demonstrate a simple example of using the Postman with Newman
 - Runs test suite: `npm test`
 
 **Notes:** You can export to the Postman application.
+
+## Using docker environment
+
+### Configuration docker
+- [Install docker](https://docs.docker.com/get-docker/)
+- [Install docker-compose](https://docs.docker.com/compose/install/)
+
+### Commands for running the tests on docker
+- Build docker image with tests: `docker-compose build test`
+- Run test on the docker: `docker-compose up test`
+
 ## Links
 
 ### Postman Documentation
