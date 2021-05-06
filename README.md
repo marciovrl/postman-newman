@@ -12,6 +12,7 @@ This project is to demonstrate a simple example of using the Postman with Newman
 * [Using docker](#Using-docker-environment)
     * [Configuration docker](#Configuration-docker)
     * [Commands for running the tests on docker](#Commands-for-running-the-tests-on-docker)
+* [Report](#Report)
 * [Links](#Links)
 
 ## Preconditions
@@ -35,6 +36,7 @@ This project is to demonstrate a simple example of using the Postman with Newman
 
 ### Commands for running the tests
 - Runs test suite: `npm test`
+- Runs test suite with HTML report generate: `npm run test:report`
 
 **Notes:** You can export to the Postman application.
 
@@ -47,6 +49,11 @@ This project is to demonstrate a simple example of using the Postman with Newman
 ### Commands for running the tests on docker
 - Build docker image with tests: `docker-compose build test`
 - Run test on the docker: `docker-compose up test`
+
+## Report
+
+### Local report
+After running the tests a report in HTML is automatically generated and stored in `results/report.html`.
 
 ## Links
 
