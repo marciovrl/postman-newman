@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  test:
+    image: postman-newman  
+    build: .
+    container_name: postman-newman  
+    command: npm test
+    volumes:
+      - ./test/:/app/test
+      - ./utils/:/app/utils

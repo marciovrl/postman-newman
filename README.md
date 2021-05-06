@@ -1,15 +1,18 @@
 # Postman with Newman
 
 ## About
-This project is to demonstrate a simple example of using the Postman with Newman. 
+This project is to demonstrate a simple example of using the Postman with Newman. Tests are performed in [JsonPlaceholder](https://jsonplaceholder.typicode.com/) is a fake online REST API for testing and prototyping.
 
 * [About](#About)
 * [Preconditions](#Preconditions)
 * [Local environment](#Local-environment)
     * [Configuration](#Configuration)
     * [Getting started](#Getting-started)
-    * [Install dependencies](#Install-dependencies)
     * [Commands for running the tests](#Commands-for-running-the-tests)
+* [Using docker](#Using-docker-environment)
+    * [Configuration docker](#Configuration-docker)
+    * [Commands for running the tests on docker](#Commands-for-running-the-tests-on-docker)
+* [Report](#Report)
 * [Links](#Links)
 
 ## Preconditions
@@ -33,8 +36,25 @@ This project is to demonstrate a simple example of using the Postman with Newman
 
 ### Commands for running the tests
 - Runs test suite: `npm test`
+- Runs test suite with HTML report generate: `npm run test:report`
 
 **Notes:** You can export to the Postman application.
+
+## Using docker environment
+
+### Configuration docker
+- [Install docker](https://docs.docker.com/get-docker/)
+- [Install docker-compose](https://docs.docker.com/compose/install/)
+
+### Commands for running the tests on docker
+- Build docker image with tests: `docker-compose build test`
+- Run test on the docker: `docker-compose up test`
+
+## Report
+
+### Local report
+After running the tests a report in HTML is automatically generated and stored in `results/report.html`.
+
 ## Links
 
 ### Postman Documentation
