@@ -1,0 +1,22 @@
+{
+  "name": "postman-newman",
+  "version": "1.0.0",
+  "description": "This project is to demonstrate a simple example of using the Postman with Newman",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/newman run test/postman-newman.postman_collection.json -g utils/postman-newman.postman_environment.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciovrl/postman-newman.git"
+  },
+  "author": "Marcio Lemos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciovrl/postman-newman/issues"
+  },
+  "homepage": "https://github.com/marciovrl/postman-newman#readme",
+  "devDependencies": {
+    "newman": "^5.2.3"
+  }
+}
